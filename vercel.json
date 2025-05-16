@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "google_challenge/(.*)",
+      "dest": "main.py"
+    }
+  ]
+}
